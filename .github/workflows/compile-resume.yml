@@ -19,11 +19,22 @@ jobs:
             - name: PDF to png
               run: pdftoppm -png resume.pdf resume
 
-            - name: Update resources
-              uses: test-room-7/action-update-file@v1
+            - name: Create Pull Request
+              id: cpr
+              uses: peter-evans/create-pull-request@v4
               with:
-                  file-path: |
-                      resume.pdf
-                      resume-1.png
-                  commit-msg: Recomping Resume
-                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: Recompiled Resume
+                  committer: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+                  author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+                  signoff: false
+                  branch: example-patches
+                  delete-branch: true
+                  title: "Recompiled Resume"
+                  body: |
+                      Recompiled Resume
+                  labels: |
+                      recompilation kautomated pr
+                  assignees: aynp
+                  reviewers: aynp
+                  draft: false
