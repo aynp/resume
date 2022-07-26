@@ -28,7 +28,7 @@ jobs:
                   committer: aynp <aryan.pathania2003@gmail.com>
                   author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
                   signoff: false
-                  branch: example-patches
+                  branch: recompile-resume
                   delete-branch: true
                   title: "Recompiled Resume"
                   body: |
