@@ -1,7 +1,7 @@
 name: Recompile Resume
 on: [push]
 jobs:
-    TEX-to-IMG:
+    recompile-resume:
         runs-on: ubuntu-latest
         steps:
             - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -25,17 +25,15 @@ jobs:
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
                   commit-message: Recompiled Resume
-                  committer: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+                  committer: aynp <aryan.pathania2003@gmail.com>
                   author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
                   signoff: false
                   branch: example-patches
                   delete-branch: true
                   title: "Recompiled Resume"
                   body: |
-                      Recompiled Resume
+                      The resume was recompiled by GitHub Action 'Recompile Resume'
                   labels: |
-                      recompilation 
-                      automated pr
-                  assignees: aynp
+                      recompilation
                   reviewers: aynp
                   draft: false
