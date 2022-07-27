@@ -3,6 +3,8 @@ on:
     push:
         branches:
             - main
+        paths:
+            - resume.tex
 jobs:
     recompile-resume:
         runs-on: ubuntu-latest
