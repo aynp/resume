@@ -1,5 +1,8 @@
 name: Recompile Resume
-on: [push]
+on:
+    push:
+        branches:
+            - main
 jobs:
     recompile-resume:
         runs-on: ubuntu-latest
