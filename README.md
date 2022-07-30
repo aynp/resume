@@ -1,6 +1,4 @@
-# Resume
-
-[![resume](/resume-1.png)](./resume.pdf "download")
+[![resume](./resume-1.png?)](./resume.pdf "download")
 
 <hr>
 
