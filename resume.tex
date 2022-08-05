@@ -5,7 +5,7 @@
     \usepackage{textcomp}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
-    \usepackage[hidelinks]{hyperref}
+    \usepackage{hyperref}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -14,10 +14,16 @@
     %\renewcommand{\encodingdefault}{cg}
 %\renewcommand{\rmdefault}{lgrcmr}
 
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+}
+
+
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
 \newcommand{\area} [2] {
     \vspace*{-9pt}
     \begin{verse}
