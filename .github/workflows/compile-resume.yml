@@ -33,7 +33,8 @@ jobs:
                   commit-message: Recompiled Resume
                   #committer: ${{github.repository_owner}} <aryan.pathania2003@gmail.com>
                   committer: ${{github.repository_owner}} <${{ github.repository_owner }}@users.noreply.github.com>
-                  author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+                  #author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+                  author: ${{github.repository_owner}} <${{ github.repository_owner }}@users.noreply.github.com>
                   signoff: false
                   branch: recompile-resume
                   delete-branch: true
