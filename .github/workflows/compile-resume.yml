@@ -1,4 +1,4 @@
-name: Recompile Resume
+name: "🏗️ Recompile resume"
 on:
     workflow_dispatch:
     push:
