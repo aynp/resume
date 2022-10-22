@@ -38,7 +38,7 @@ jobs:
                   signoff: false
                   branch: recompile-resume
                   delete-branch: true
-                  title: "Recompiled Resume"
+                  title: "🏗️ Recompile resume"
                   body: |
                       The resume was recompiled by GitHub Action 'Recompile Resume'
                   labels: |
