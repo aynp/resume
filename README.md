@@ -2,4 +2,4 @@
 
 <hr>
 
-This resume is auto genrated by github actions.
+This resume is auto genrated by GitHub Actions.
