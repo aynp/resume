@@ -1,6 +1,6 @@
 # Usage
 
-The github actions associated with the repository automatically genrate `resume.pdf` and `resume-1.png` (displayed in the README.md) whenever a change is pushed to `resume.tex`.
+The github actions associated with the repository automatically generate `resume.pdf` and `resume-1.png` (displayed in the README.md) whenever a change is pushed to `resume.tex`.
 
 ## Steps
 
