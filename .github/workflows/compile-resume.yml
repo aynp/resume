@@ -14,13 +14,13 @@ jobs:
             - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
 
             - name: Install deps
-              run: sudo apt-get install texlive-latex-base poppler-utils texlive-latex-extra texlive-fonts-extra tex-gyre dos2unix --no-install-recommends
+              run: sudo apt-get install texlive-latex-base poppler-utils texlive-latex-extra texlive-fonts-extra tex-gyre --no-install-recommends
 
             - name: Check out repository code
               uses: actions/checkout@v3
 
             - name: Fix line endings
-              run: dos2unix resume.tex
+              run: sed -i 's/\r$//' resume.tex
 
             - name: Tex to PDF
               run: pdflatex resume.tex
